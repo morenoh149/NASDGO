@@ -3,18 +3,19 @@
 Golang implementaion of a stock exchange
 
 ## Requirements
-1. Cannot lose customer orders
-1. Clients submit orders via HTTP POST
+1. unlikelly to lose customer orders
+1. Clients interface via HTTP
 1. limit orders
 
 ## Architecture
+* start with https://github.com/gobuffalo/buffalo
 * account management
 * matching engine (exchange engine, order book)
   * real-time
 * order management
 * treasure to hold funds
 * keep as much in memory as possible
-  * use memcache
+  * use redis
 * use two threads
   * order matching thread
   * persistence thread writing to rabbitmq
@@ -29,6 +30,7 @@ Golang implementaion of a stock exchange
 * FIX
 * FAST
 * ITCH
+* websocket for order data to clients
 
 ## links 
 * http://www.nyxdata.com/capacity
