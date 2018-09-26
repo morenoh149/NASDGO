@@ -9,6 +9,7 @@ Golang implementaion of a stock exchange
 
 ## Architecture
 * start with https://github.com/gobuffalo/buffalo
+* transcribe http://bhomnick.net/building-a-simple-limit-order-in-go/
 * account management
 * matching engine (exchange engine, order book)
   * real-time
@@ -31,6 +32,9 @@ Golang implementaion of a stock exchange
 * FAST
 * ITCH
 * websocket for order data to clients
+* 1-click deploy to aws
+* stresstest with locust
+* provide QT desktop client
 
 ## links 
 * http://www.nyxdata.com/capacity
